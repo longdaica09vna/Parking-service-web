@@ -1,0 +1,95 @@
+.accordion-started.accordion-bral {
+	min-height: 0;
+	width: 100%
+	min-width: 300px;
+	margin: 0px !important;
+}
+
+.accordion-started.accordion-bral img {
+	height: 100%;
+}
+
+.accordion-started.accordion-bral .ac-label {
+	font-family: Arial, sans-serif;
+	position: relative;
+	display: block;
+	height: auto;
+	cursor: pointer;
+	line-height: 33px;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+
+.accordion-started.accordion-bral .ac-label:hover {
+	background-color: #C7CBD3;
+}
+
+.accordion-started.accordion-bral input+.ac-label {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.accordion-started.accordion-bral input.ac-input {
+	visibility: hidden;
+	width: 100% !important;
+	min-width: 200px !important;
+}
+
+.accordion-started.accordion-bral .article {
+	overflow: hidden;
+	height: 0px;
+	max-height: auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.accordion-started.accordion-bral input:checked ~ .article.fa-angle-left {
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.accordion-started.accordion-bral input:checked ~ .article.ac-content {
+	height: auto;
+	width: 100%;
+	padding-left: 20%
+}
+
+.fa-angle-left {
+	float: right;
+	margin-top: 5%;
+	right: 0;
+}
+
+.accordion-started.accordion-bral input:checked ~ .ac-label .fa-angle-left:before
+	{
+	transform: translate(2px, 0) rotate(-90deg);
+}
+
+.accordion-started.accordion-bral input:checked ~ .ac-label .fa-angle-left:after
+	{
+	transform: translate(2px, 0) rotate(-90deg);
+}
+
+.accordion-started.accordion-bral .fa-angle-left:before, .accordion-bral .fa-angle-left:after
+	{
+	float: right;
+	margin-top: 5%;
+	right: 0;
+	padding-right: 10%;
+}
+
+.border-bottom{
+	width: 100%;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
